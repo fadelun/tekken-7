@@ -1,0 +1,146 @@
+body {
+  font-size: 18px !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav.navbar {
+  background-image: linear-gradient(#161616, rgba(3, 0, 136, 0));
+}
+
+nav.navbar .btn-primary {
+  background-color: #030088;
+  border-radius: 0;
+  border: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+nav.navbar .btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+nav.navbar .btn-primary.hvr-outline-out {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+nav.navbar .btn-primary.hvr-outline-out::before {
+  content: "";
+  position: absolute;
+  border: #030088 solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+  transition-property: top, right, bottom, left;
+}
+
+nav.navbar .btn-primary.hvr-outline-out:hover:before, nav.navbar .btn-primary.hvr-outline-out:focus:before, nav.navbar .btn-primary.hvr-outline-out:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  border-color: #0b5ed7;
+}
+
+@media (max-width: 767px) {
+  main {
+    background-image: url("../../assets/persons/heachi.png");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 70rem;
+  }
+  .fighters-list {
+    max-width: 100% !important;
+    bottom: 2% !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  .fighters-list .col {
+    max-width: 6rem !important;
+  }
+}
+
+footer {
+  background-color: #0c0b0b;
+  padding: 5rem 0;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 3rem 0;
+  }
+}
+
+body {
+  background: linear-gradient(to top, #030088 0%, #0c0b0b 30%, #0c0b0b 70%, rgba(3, 0, 136, 0.8) 100%), url("../../assets/bg-personal-page.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+body main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: url("../../assets/persons/linear-bg.png");
+}
+
+body .full-body-fighter {
+  height: 74rem;
+}
+
+body .full-body-fighter img {
+  height: 100%;
+  transform: scaleX(-1);
+  left: -70px;
+}
+
+body .description {
+  color: white;
+}
+
+body .description .personal-name {
+  font-size: 3.5rem;
+}
+
+body .description .personal-name,
+body .description h3 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -2px;
+}
+
+body .fighters-list {
+  width: 29rem;
+  bottom: 16%;
+  right: 8%;
+  z-index: 100;
+}
+
+body .fighters-list .col {
+  max-width: 7rem;
+}
+
+body .fighters-list .figure {
+  opacity: 0.7;
+  margin: 0 !important;
+}
+
+body .fighters-list .figure:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+body .fighters-list .figure .figure-caption {
+  color: white;
+  font-size: 0.7em;
+}
+/*# sourceMappingURL=person.css.map */

@@ -1,0 +1,71 @@
+@import "variable";
+@import "mixin";
+@import "navbar";
+@import "responsive";
+@import "footer";
+
+body {
+  background: linear-gradient(to top, $primary 0%, rgba(12, 11, 11, 1) 30%, rgba(12, 11, 11, 1) 70%, transparentize($primary, 0.2) 100%), url("../../assets/bg-personal-page.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  main {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background: url("../../assets/persons/linear-bg.png");
+    }
+  }
+
+  .full-body-fighter {
+    height: 74rem;
+
+    img {
+      height: 100%;
+      // top: 20px;
+      transform: scaleX(-1); //membuat gambar terbalik
+      left: -70px;
+      // z-index: -1;
+    }
+  }
+
+  .description {
+    color: white;
+
+    .personal-name {
+      font-size: 3.5rem;
+    }
+    .personal-name,
+    h3 {
+      font-family: $font-display;
+      letter-spacing: -2px;
+    }
+  }
+
+  .fighters-list {
+    width: 29rem;
+    bottom: 16%;
+    right: 8%;
+    z-index: 100;
+
+    .col {
+      max-width: 7rem;
+    }
+    .figure {
+      opacity: 0.7;
+      margin: 0 !important;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+      .figure-caption {
+        color: white;
+        font-size: 0.7em;
+      }
+    }
+  }
+}

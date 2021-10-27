@@ -1,0 +1,114 @@
+body {
+  font-size: 18px !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav.navbar {
+  background-image: linear-gradient(#161616, rgba(3, 0, 136, 0));
+}
+
+nav.navbar .btn-primary {
+  background-color: #030088;
+  border-radius: 0;
+  border: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+nav.navbar .btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+nav.navbar .btn-primary.hvr-outline-out {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+nav.navbar .btn-primary.hvr-outline-out::before {
+  content: "";
+  position: absolute;
+  border: #030088 solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+  transition-property: top, right, bottom, left;
+}
+
+nav.navbar .btn-primary.hvr-outline-out:hover:before, nav.navbar .btn-primary.hvr-outline-out:focus:before, nav.navbar .btn-primary.hvr-outline-out:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  border-color: #0b5ed7;
+}
+
+footer {
+  background-color: #0c0b0b;
+  padding: 5rem 0;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 3rem 0;
+  }
+}
+
+body {
+  background-image: url("../../assets/bg-fighters-page.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+
+body .form-check-input {
+  opacity: 0;
+}
+
+body .form-check-input:checked ~ .form-check-label {
+  opacity: 1;
+  text-shadow: 0 0 6px white;
+}
+
+body .form-check-label {
+  opacity: 0.7;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+body .form-check-label:hover {
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  body .row.row-cols-lg-7 > * {
+    width: 14%;
+  }
+}
+
+body a {
+  color: white;
+}
+
+body a:hover {
+  color: white;
+}
+
+body a .figure {
+  opacity: 0.7;
+  margin: 0 !important;
+}
+
+body a .figure:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+body a .figure .figure-caption {
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=fighters.css.map */

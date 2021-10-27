@@ -1,0 +1,138 @@
+@import "variable";
+@import "mixin";
+@import "navbar";
+@import "footer";
+
+body {
+  background-color: #0c0b0b;
+
+  main {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.7) 100%), url("../../Assets/home/bg-main.jpg");
+    // background: ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 98vh;
+    z-index: 80;
+
+    header {
+      margin-top: 20vh;
+
+      h1 {
+        font-size: 6em;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        color: white;
+        letter-spacing: -5px !important;
+        line-height: 92.9%;
+      }
+    }
+  }
+
+  section#fighters-section {
+    h1 {
+      font-family: $font-display;
+      font-size: 22vw;
+      letter-spacing: -10px !important;
+      top: -20px;
+
+      color: rgba(255, 255, 255, 0.04);
+    }
+    background: #1a1717;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    &::before {
+      content: "";
+      position: absolute;
+      // top: -144px;
+      top: -20%;
+      left: 0;
+      right: 0;
+      height: 30%;
+      background: linear-gradient(to top, #1a171700, #1a1717 30%, #1a1717 54%, #0c0b0b00);
+      z-index: 100;
+    }
+    .container {
+      .row#fighters {
+        z-index: 3;
+        flex-wrap: nowrap;
+        max-width: 44vw;
+        margin: 0 auto 3rem;
+        .col {
+          margin: 0 4px;
+          padding: 0;
+          box-sizing: content-box !important;
+          .card {
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: linear-gradient(to top, #1d2136 10%, transparentize($primary, 1));
+            }
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            box-shadow: 4px 4px 10px black;
+            border: 0;
+            background: $secondary;
+            border-radius: 0;
+            cursor: pointer;
+            figure img.translate-middle {
+              opacity: 0;
+            }
+            &:hover {
+              z-index: 102;
+              opacity: 0;
+            }
+
+            &:hover ~ figure {
+              box-sizing: content-box !important;
+              z-index: 101 !important;
+              opacity: 1;
+              transform: scaleY(1.2);
+              transition: opacity 0.25s ease-out;
+              // translate-middle class of boostrap
+              img.translate-middle {
+                transform: translate(-50%, -50%) scaleY(0.8) !important;
+              }
+            }
+            .image-card {
+              width: 102%;
+              height: 102%;
+            }
+          }
+
+          figure {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.25s ease-out;
+          }
+        }
+      }
+
+      .row {
+        .btn-primary {
+          @include btn-primary(0, 0);
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background-image: linear-gradient(to top, #414141, #0c0b0b00);
+    }
+  }
+}

@@ -63,7 +63,7 @@ body {
 }
 
 body main {
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.7) 100%), url("../../Assets/home/bg-main.jpg");
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.7) 100%), url("../../assets/home/bg-main.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

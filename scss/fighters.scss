@@ -5,12 +5,11 @@
 
 body {
   background-image: url("../../assets/bg-fighters-page.png");
-
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
 
-  .form-check-input {
+  main .form-check-input {
     opacity: 0;
     &:checked ~ .form-check-label {
       opacity: 1;
@@ -29,7 +28,7 @@ body {
 
   @media (min-width: 1024px) {
     .row.row-cols-lg-7 > * {
-      width: 14%;
+      width: 14% !important;
     }
   }
   a {

@@ -65,11 +65,11 @@ body {
   background-size: cover;
 }
 
-body .form-check-input {
+body main .form-check-input {
   opacity: 0;
 }
 
-body .form-check-input:checked ~ .form-check-label {
+body main .form-check-input:checked ~ .form-check-label {
   opacity: 1;
   text-shadow: 0 0 6px white;
 }
@@ -86,7 +86,7 @@ body .form-check-label:hover {
 
 @media (min-width: 1024px) {
   body .row.row-cols-lg-7 > * {
-    width: 14%;
+    width: 14% !important;
   }
 }
 

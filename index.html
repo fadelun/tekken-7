@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- my style -->
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>TK 7</title>
   </head>
@@ -16,7 +19,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./assets/tk7-logo-md.png" width="200" alt="tekken-logo" />
+            <img src="./assets/tk7-logo-md.png" alt="tekken-logo" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,32 +46,30 @@
       <h1 class="fw-bold position-fixed">FIGHTERS</h1>
       <div class="container text-center">
         <div id="fighters" class="row justify-content-center">
-          <div class="col position-relative">
-            <a href="#">
+          <div class="col position-relative" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="50">
+            <a href="./fighters/Leroy.html">
               <div class="card">
-                <img src="assets//home/steve-longercard.png" class="image-card" alt="steve fox" />
+                <img src="assets/home/leroy-longercard.png" class="image-card" alt="leroy smith" />
               </div>
               <figure class="position-absolute bg-warning">
-                <img src="assets/persons/steve fox.png" class="show-fighter position-absolute top-50 start-50 translate-middle" height="150%" alt="steve fox" />
-                <figcaption class="figure-caption">STEVE</figcaption>
+                <img src="assets/persons/leroy.png" class="show-fighter position-absolute top-50 start-50 translate-middle" height="150%" alt="leroy smith" />
               </figure>
             </a>
           </div>
-          <div class="col position-relative">
-            <a href="#">
+          <div class="col position-relative" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="100">
+            <a href="./fighters/Fahkumram.html">
               <div class="card">
-                <img src="assets//home/claudio-longercard.png" class="image-card" alt="claudio" />
+                <img src="assets/home/fahkumram-longercard.png" class="image-card" alt="fahkumram" />
               </div>
-              <figure class="position-absolute bg-warning" style="top: 0; left: 0; right: 0; bottom: 0; margin: 0; z-index: -1">
-                <img src="assets/persons/claudio.png" class="show-fighter position-absolute top-50 start-50 translate-middle" height="150%" alt="claudio" />
-                <!-- <div class="show-fighter position-absolute" style="background-image: url(./assets/persons/lidia.png); background-size: cover; background-position: center; top: 0; left: 0; right: 0; bottom: 0"></div> -->
+              <figure class="position-absolute bg-warning">
+                <img src="assets/persons/fahkumram.png" class="show-fighter position-absolute top-50 start-50 translate-middle" height="150%" alt="fahkumram" />
               </figure>
             </a>
           </div>
-          <div class="col position-relative">
-            <a href="#">
+          <div class="col position-relative" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="300">
+            <a href="./fighters/Kunimitsu.html">
               <div class="card">
-                <img src="assets//home/kunimitsu-longercard.png" class="image-card" alt="kunimitsu" />
+                <img src="assets/home/kunimitsu-longercard.png" class="image-card" alt="kunimitsu" />
               </div>
               <figure class="position-absolute bg-warning">
                 <img src="assets/persons/kunimitsu.png" class="show-fighter position-absolute top-50 start-50 translate-middle" height="150%" alt="kunimitsu" />
@@ -76,25 +77,24 @@
             </a>
           </div>
           <!--  -->
-          <div class="col position-relative">
-            <a href="#">
+          <div class="col position-relative" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="600">
+            <a href="./fighters/Lidia.html">
               <div class="card">
-                <img src="assets//home/lidia-longercard.png" class="image-card" alt="lidia" />
+                <img src="assets/home/lidia-longercard.png" class="image-card" alt="lidia" />
               </div>
               <figure class="position-absolute bg-warning">
                 <img src="assets/persons/lidia.png" class="show-fighter position-absolute top-50 start-50 translate-middle" height="150%" alt="lidia" />
-                <!-- <div class="show-fighter position-absolute" style="background-image: url(./assets/persons/lidia.png); background-size: cover; background-position: center; top: 0; left: 0; right: 0; bottom: 0"></div> -->
               </figure>
             </a>
           </div>
           <!--  -->
-          <div class="col position-relative">
-            <a href="#">
+          <div class="col position-relative" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="900">
+            <a href="./fighters/Zafina.html">
               <div class="card">
-                <img src="assets//home/lars-longercard.png" class="image-card" alt="lars" />
+                <img src="assets//home/zafina-longercard.png" class="image-card" alt="zafina" />
               </div>
               <figure class="position-absolute bg-warning">
-                <img src="assets/persons/lars.png" class="show-fighter position-absolute top-50 start-50 translate-middle" height="150%" alt="lars" />
+                <img src="assets/persons/zafina.png" class="show-fighter position-absolute top-50 start-50 translate-middle" height="150%" alt="zafina" />
                 <!-- <div class="show-fighter position-absolute" style="background-image: url(./assets/persons/lidia.png); background-size: cover; background-position: center; top: 0; left: 0; right: 0; bottom: 0"></div> -->
               </figure>
             </a>
@@ -105,8 +105,6 @@
           <a href="#" class="col-4 offset-4 btn btn-primary hvr-outline-out py-2 fw-bold"> ALL FIGHTERS</a>
         </div>
       </div>
-      <!-- <div class="linear-lightheen bg-primary" style="background: url(./assets/home/linear-lightheen.png)"></div> -->
-      <!-- <div class="linear-lightheen bg-primary position-absolute" style="background: url(./assets/home/linear-lightheen.png)"></div> -->
     </section>
 
     <footer class="position-relative">
@@ -126,5 +124,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>

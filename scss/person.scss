@@ -1,14 +1,17 @@
 @import "variable";
 @import "mixin";
 @import "navbar";
-@import "responsive";
+// @import "responsive";
 @import "footer";
 
 body {
-  background: linear-gradient(to top, $primary 0%, rgba(12, 11, 11, 1) 30%, rgba(12, 11, 11, 1) 70%, transparentize($primary, 0.2) 100%), url("../../assets/bg-personal-page.png");
+  background: linear-gradient(to top, $primary 0%, rgba(12, 11, 11, 1) 30%, rgba(12, 11, 11, 1) 80%, transparentize($primary, 0.2) 100%), url("../../assets/bg-personal-page.png");
   background-size: contain;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  nav {
+    z-index: 10000;
+  }
   main {
     &::after {
       content: "";
@@ -16,39 +19,49 @@ body {
       bottom: 0;
       left: 0;
       right: 0;
-      height: 40%;
+      height: 37%;
       background: url("../../assets/persons/linear-bg.png");
     }
   }
 
   .full-body-fighter {
-    height: 74rem;
+    min-height: 80rem;
 
     img {
-      height: 100%;
-      // top: 20px;
       transform: scaleX(-1); //membuat gambar terbalik
       left: -70px;
-      // z-index: -1;
+      bottom: -20px;
+      // top: -100px;
+      height: 110%;
     }
   }
 
   .description {
+    text-align: right;
     color: white;
+    margin-top: 30%;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 12px black;
 
     .personal-name {
-      font-size: 3.5rem;
+      font-size: 5rem;
+      line-height: 0.8;
+      margin-bottom: 30px !important;
     }
     .personal-name,
     h3 {
       font-family: $font-display;
       letter-spacing: -2px;
+      text-align: left;
+    }
+    P {
+      line-height: 2;
     }
   }
 
   .fighters-list {
-    width: 29rem;
-    bottom: 16%;
+    width: 100vw;
+    bottom: 3rem;
     right: 8%;
     z-index: 100;
 
@@ -56,16 +69,46 @@ body {
       max-width: 7rem;
     }
     .figure {
-      opacity: 0.7;
-      margin: 0 !important;
+      filter: contrast(65%);
+      margin: 0;
+      background-color: #808080;
       &:hover {
-        opacity: 1;
+        filter: contrast(100%);
         cursor: pointer;
       }
       .figure-caption {
         color: white;
         font-size: 0.7em;
       }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    min-height: 80rem;
+  }
+
+  .description {
+    margin-top: 20rem;
+    h1.personal-name {
+      font-size: 12vw;
+    }
+  }
+
+  .fighters-list {
+    max-width: 100% !important;
+
+    bottom: -6rem !important;
+    left: 2% !important;
+    right: 2% !important;
+
+    .col {
+      max-width: 5rem !important;
+      font-size: 0.6em;
     }
   }
 }

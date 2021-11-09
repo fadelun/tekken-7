@@ -2,6 +2,7 @@
 @import "mixin";
 @import "navbar";
 @import "footer";
+@import "responsive";
 
 body {
   background-color: #0c0b0b;
@@ -19,7 +20,7 @@ body {
       margin-top: 20vh;
 
       h1 {
-        font-size: 6em;
+        font-size: calc(5rem + 18%);
         font-family: "Poppins", sans-serif;
         font-weight: bold;
         color: white;
@@ -35,7 +36,7 @@ body {
       font-size: 22vw;
       letter-spacing: -10px !important;
       top: -20px;
-
+      cursor: default;
       color: rgba(255, 255, 255, 0.04);
     }
     background: #1a1717;
@@ -58,6 +59,9 @@ body {
         flex-wrap: nowrap;
         max-width: 44vw;
         margin: 0 auto 3rem;
+        @media screen and(max-width: 576px) {
+          max-width: 80vw;
+        }
         .col {
           margin: 0 4px;
           padding: 0;
@@ -119,6 +123,7 @@ body {
       }
 
       .row {
+        z-index: 10;
         .btn-primary {
           @include btn-primary(0, 0);
         }

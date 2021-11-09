@@ -47,25 +47,6 @@ nav.navbar .btn-primary.hvr-outline-out:hover:before, nav.navbar .btn-primary.hv
   border-color: #0b5ed7;
 }
 
-@media (max-width: 767px) {
-  main {
-    background-image: url("../../assets/persons/heachi.png");
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    height: 70rem;
-  }
-  .fighters-list {
-    max-width: 100% !important;
-    bottom: 2% !important;
-    left: 0 !important;
-    right: 0 !important;
-  }
-  .fighters-list .col {
-    max-width: 6rem !important;
-  }
-}
-
 footer {
   background-color: #0c0b0b;
   padding: 5rem 0;
@@ -78,10 +59,14 @@ footer {
 }
 
 body {
-  background: linear-gradient(to top, #030088 0%, #0c0b0b 30%, #0c0b0b 70%, rgba(3, 0, 136, 0.8) 100%), url("../../assets/bg-personal-page.png");
+  background: linear-gradient(to top, #030088 0%, #0c0b0b 30%, #0c0b0b 80%, rgba(3, 0, 136, 0.8) 100%), url("../../assets/bg-personal-page.png");
   background-size: contain;
   background-repeat: no-repeat;
   overflow-x: hidden;
+}
+
+body nav {
+  z-index: 10000;
 }
 
 body main::after {
@@ -90,37 +75,49 @@ body main::after {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40%;
+  height: 37%;
   background: url("../../assets/persons/linear-bg.png");
 }
 
 body .full-body-fighter {
-  height: 74rem;
+  min-height: 80rem;
 }
 
 body .full-body-fighter img {
-  height: 100%;
   transform: scaleX(-1);
   left: -70px;
+  bottom: -20px;
+  height: 110%;
 }
 
 body .description {
+  text-align: right;
   color: white;
+  margin-top: 30%;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 12px black;
 }
 
 body .description .personal-name {
-  font-size: 3.5rem;
+  font-size: 5rem;
+  line-height: 0.8;
+  margin-bottom: 30px !important;
 }
 
 body .description .personal-name,
 body .description h3 {
   font-family: "Poppins", sans-serif;
   letter-spacing: -2px;
+  text-align: left;
+}
+
+body .description P {
+  line-height: 2;
 }
 
 body .fighters-list {
-  width: 29rem;
-  bottom: 16%;
+  width: 100vw;
+  bottom: 3rem;
   right: 8%;
   z-index: 100;
 }
@@ -130,17 +127,43 @@ body .fighters-list .col {
 }
 
 body .fighters-list .figure {
-  opacity: 0.7;
-  margin: 0 !important;
+  filter: contrast(65%);
+  margin: 0;
+  background-color: #808080;
 }
 
 body .fighters-list .figure:hover {
-  opacity: 1;
+  filter: contrast(100%);
   cursor: pointer;
 }
 
 body .fighters-list .figure .figure-caption {
   color: white;
   font-size: 0.7em;
+}
+
+@media (max-width: 767px) {
+  main {
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    min-height: 80rem;
+  }
+  .description {
+    margin-top: 20rem;
+  }
+  .description h1.personal-name {
+    font-size: 12vw;
+  }
+  .fighters-list {
+    max-width: 100% !important;
+    bottom: -6rem !important;
+    left: 2% !important;
+    right: 2% !important;
+  }
+  .fighters-list .col {
+    max-width: 5rem !important;
+    font-size: 0.6em;
+  }
 }
 /*# sourceMappingURL=person.css.map */

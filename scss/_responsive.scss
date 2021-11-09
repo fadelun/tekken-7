@@ -1,22 +1,14 @@
-@media (max-width: 767px) {
-  // styling person page only
-  main {
-    background-image: url("../../assets/persons/heachi.png");
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    height: 70rem;
+:root {
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
   }
-
-  .fighters-list {
-    max-width: 100% !important;
-
-    bottom: 2% !important;
-    left: 0 !important;
-    right: 0 !important;
-
-    .col {
-      max-width: 6rem !important;
-    }
+  @media screen and(min-width: 576px) {
+    font-size: 14px;
+  }
+  @media screen and(min-width: 767px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 22px;
   }
 }

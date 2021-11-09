@@ -58,6 +58,30 @@ footer {
   }
 }
 
+@media screen and (max-width: 576px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+    font-size: 22px;
+  }
+}
+
 body {
   background-color: #0c0b0b;
 }
@@ -76,7 +100,7 @@ body main header {
 }
 
 body main header h1 {
-  font-size: 6em;
+  font-size: calc(5rem + 18%);
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: white;
@@ -95,6 +119,7 @@ body section#fighters-section h1 {
   font-size: 22vw;
   letter-spacing: -10px !important;
   top: -20px;
+  cursor: default;
   color: rgba(255, 255, 255, 0.04);
 }
 
@@ -114,6 +139,12 @@ body section#fighters-section .container .row#fighters {
   flex-wrap: nowrap;
   max-width: 44vw;
   margin: 0 auto 3rem;
+}
+
+@media screen and (max-width: 576px) {
+  body section#fighters-section .container .row#fighters {
+    max-width: 80vw;
+  }
 }
 
 body section#fighters-section .container .row#fighters .col {
@@ -178,6 +209,10 @@ body section#fighters-section .container .row#fighters .col figure {
   opacity: 0;
   z-index: -1;
   transition: opacity 0.25s ease-out;
+}
+
+body section#fighters-section .container .row {
+  z-index: 10;
 }
 
 body section#fighters-section .container .row .btn-primary {

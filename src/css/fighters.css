@@ -99,16 +99,36 @@ body a:hover {
 }
 
 body a .figure {
-  opacity: 0.7;
-  margin: 0 !important;
+  width: 100%;
+  filter: contrast(65%);
+  margin: 0;
+  background-color: #808080;
+  box-shadow: 4px 4px 10px black;
+}
+
+body a .figure.muted {
+  opacity: 0.6;
+  filter: contrast(40%);
+}
+
+body a .figure.muted:hover {
+  filter: contrast(40%);
+  cursor: default;
+  background-color: #808080;
+}
+
+body a .figure img {
+  width: 100%;
 }
 
 body a .figure:hover {
-  opacity: 1;
+  filter: contrast(100%);
   cursor: pointer;
+  background-color: #030088;
 }
 
 body a .figure .figure-caption {
-  font-size: 0.8rem;
+  font-size: 0.8em;
+  color: white;
 }
 /*# sourceMappingURL=fighters.css.map */

@@ -88,7 +88,7 @@ const getDataPerson = (data) => {
       const findedName = personName.find((name) => name == names[i]);
 
       fighterName.innerHTML = e.name;
-      fighterImage.src = `../../assets/persons/${findedName}.png`;
+      fighterImage.src = `../../assets/persons/${findedName.toLowerCase()}.png`;
       fighterImage.alt = findedName;
       description.firstElementChild.children[1].innerHTML = `AGE : ${e.age ? e.age : " Unknown"}`;
       description.firstElementChild.children[2].innerHTML = `REGION : ${e.country ? e.country.toUpperCase() : " Unknown"}`;
@@ -157,7 +157,7 @@ const getfighters = (names) => {
     const generateCol = `<div class="col">
                                         <a href="./${e}.html" style="color: white">
                                         <figure class="figure position-relative">
-                                            <img src="../../assets/fighters/${e}.png" class="figure-img img-fluid m-0" alt="${e}" />
+                                            <img src="../../assets/fighters/${e.toLowerCase()}.png" class="figure-img img-fluid m-0" alt="${e}" />
                                             <figcaption class="figure-caption position-absolute bottom-0 start-0">${e}</figcaption>
                                         </figure>
                                         </a>

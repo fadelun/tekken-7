@@ -1,0 +1,363 @@
+{
+  "fighters": [
+    {
+      "name": "Akuma",
+      "country": false,
+      "age": false,
+      "gender": ["male"],
+      "quote": "CAN YOU WITHSTAND MY POWER?",
+      "info": [
+        "A mysterious fighter… a demon. He finds himself in the middle of the Mishima blood feud by a pre-existing relationship with Kazumi, Hehiachi's wife. He makes his debut in TEKKEN 7 promising to fulfill a debt owed to Kazumi."
+      ]
+    },
+    {
+      "name": "Alisa Bosconovitch",
+      "country": "Russia",
+      "age": false,
+      "gender": ["female", "non-human"],
+      "quote": "I AM ALISA, NICE TO MEET YOU",
+      "info": [
+        "An android created by Dr. Bosconovitch as a bodyguard for Jin Kazama. Her design itself is modeled after Bosconovitch's own lost daughter. Her fighting capabilities are extremely high. She can perform attacks with high mobility using arm-mounted missiles and thrusters."
+      ]
+    },
+    {
+      "name": "Anna Williams",
+      "country": "Ireland",
+      "age": 41,
+      "gender": ["female"],
+      "quote": "DON'T TEST ME... STEP ASIDE!",
+      "info": [
+        "Born to a family of assassins, Anna was taught the basics of assassination along with her sister, Nina, from a young age. Their father's affection was always for Nina, however, so Anna's jealousy eventually turned to a deep-seated hatred for her sister. Over their years, their rivalry has intensified. Their sibling rivalry is so fierce, that Anna would blast a missile at Nina in a heartbeat."
+      ]
+    },
+    {
+      "name": "Armor King",
+      "country": false,
+      "age": false,
+      "gender": ["male"],
+      "quote": false,
+      "info": ["A mysterious wrestler who wears a suit of steel armor and a black jaguar mask. He was presumed to have been killed in a bar fight with Craig Marduk, yet he's returned to fight once again. No one knows his true identity."]
+    },
+    {
+      "name": "Asuka Kazama",
+      "country": "Japan",
+      "age": 17,
+      "gender": ["female"],
+      "quote": "WHEN YOU RESORT TO FIGHTING, EVERYONE LOSES",
+      "info": "Daughter of the Kazama Traditional Martial Arts School and known as \"Gang Mediator\" in her hometown. Ever since she involved herself in a certain street fight, Lili has viewed her as a rival. She knows that Jin Kazama is her cousin and vows to take him down."
+    },
+    {
+      "name": "Bob",
+      "country": "USA",
+      "age": 27,
+      "gender": ["male"],
+      "quote": "SPEED AND WEIGHT!",
+      "info": [
+        "Once a fighter who had won the hearts of fans with his excellent sensibility and handsome good looks, he decided to transform himself completely by gaining weight to eliminate the perceived disadvantage he had in a fight due to his body type. His fans were disappointed, as on the outside it looked like he'd merely put on a few too many pounds, but Bob was definitely pleased with himself."
+      ]
+    },
+    {
+      "name": "Bryan Fury",
+      "country": "USA",
+      "age": 31,
+      "gender": ["male"],
+      "quote": "MWAHAHAHAHA! SO, WHICH ONE OF YOU WANTS TO DIE?",
+      "info": [
+        "A savage fighter who uses a kickboxing fighting style. He's reported to have died twice and was somehow revived each time. He once belonged to an international police force, but Dr. Abel and Dr. Bosconovitch made him a replicant with a perpetual generator that keeps him alive."
+      ]
+    },
+    {
+      "name": "Claudio Serafino",
+      "country": "Italy",
+      "age": false,
+      "gender": ["male"],
+      "quote": "THIS IS NO PLACE FOR AMATEURS.",
+      "info": [
+        "The Sirius Marksmen, a secret society of exorcists, has exerted a profound influence on European history for hundreds of years. The most powerful exorcist of the current generation is Claudio, who was visiting the Mishima Zaibatsu as their groups join forces to subdue a certain evil.",
+        "After sharing information on the targets, Kazuya Mishima and Jin Kazama, Claudio left the control room only to be confronted by a young girl. He was about to call the guards when she demanded to be taken to Jin. A plan sprung to Claudio's mind.",
+        "He led her to the roof, and with a grin prepared to face her in combat."
+      ]
+    },
+    {
+      "name": "Devil Jin",
+      "country": false,
+      "age": false,
+      "gender": ["male"],
+      "quote": "FEAR MY WRATH",
+      "info": [
+        "After he defeated Azazel, Jin Kazama was apprehended by UN troops. As his unconscious body was being transported by helicopter, he became possessed by his devil form, ripped free from his straitjacket, tore through the helicopter's fuselage with a powerful beam attack, and then escaped.",
+        "Intermittently fending off the UN's attempts to recapture him, Devil Jin wandered the desert until he stumbled across a town in the Middle East. His arrival at the town's bazaar sent the civilians fleeing for their lives, turning the once buzzing settlement into an abandoned husk.",
+        "That is until a certain someone showed his face..."
+      ]
+    },
+    {
+      "name": "Dragunov",
+      "country": "Russia",
+      "age": 26,
+      "gender": ["male"],
+      "quote": "…",
+      "info": [
+        "Sergei Dragunov entered the King of Iron Fist Tournament on army orders. At the designated arena of his first match, a woman appeared before him. There was something strangely familiar about her...",
+        "It didn't take Dragunov long to figure out who she was, and he wasted no time in readying himself for combat."
+      ]
+    },
+    {
+      "name": "Eddy Gordo",
+      "country": "Brazil",
+      "age": 29,
+      "gender": ["male"],
+      "quote": "DON'T THINK I'LL GO EASY ON YOU.",
+      "info": [
+        "Eddy Gordo went to G Corporation to exact revenge on Kazuya Mishima for murdering his father. After he'd taken out a crowd of guards, a young girl in a strange outfit stood before him, and struck a pose. \"You're not getting past me, old man! Teehee!\" ",
+        " What did she mean by 'old man'? Confused and irritated by her appearance and disrespectful tone, but aware of the threat she posed, Eddy prepared to fight."
+      ]
+    },
+    {
+      "name": "Eliza",
+      "country": false,
+      "age": 1000,
+      "gender": ["female"],
+      "quote": "HEHEHE… YOU LOOK DELICIOUS.",
+      "info": [
+        "Eliza was only supposed to take a short nap, but she ended up sleeping for 600 years. Upon awakening, she found her powers as a vampire had faded to nothing. In an attempt to restore her strength, she consumed the blood of several victims. However, it wasn't enough.",
+        "What she needed was the blood of someone with an intense spiritual force? Maybe then she would return to peak condition. But did such a person even exist in this era? No-one sprang to mind.",
+        "Left with no other choice, Eliza headed for the old HQ of the clan of exorcists who had caused her no end of trouble when she last prowled the nights. Perhaps some of their descendants were still alive."
+      ]
+    },
+    {
+      "name": "Fahkumram",
+      "country": "Thailand",
+      "age": 28,
+      "gender": ["male"],
+      "quote": "YOU.. HAVE ANY REASON TO FIGHT?.",
+      "info": [
+        "Struck by lightning at the age of 12, Fahkumram became a Muay Thai champion by the time he was 18.",
+        "Married and father of a daughter, his life took a dramatic turn for the worse.",
+        "Ambushed and kept prisoner by the military, his family was taken hostage, leaving no choice to Fahkumram but to comply with his captors’ orders and fight in underground battle rings.",
+        "Unable to see a way out, the once proud champion gradually lost himself in more extreme acts of violence and rage.",
+        "He competes in the King of Iron Fist Tournament as his last hope to gain freedom for both him and his family."
+      ]
+    },
+    {
+      "name": "Feng Wei",
+      "country": "China",
+      "age": 26,
+      "gender": ["male"],
+      "quote": "COME ON",
+      "info": [
+        "Feng Wei had always abided by what was written on the God Fist scroll: \"Defeat all other masters and conquer their styles; the perfect warrior transcends all to become the Dragon God.\" Having fought masters of many different styles, Feng returned to his childhood training ground to continue his intense training regime. Then one day, an unexpected visitor appeared before Feng: a mysterious man who exuded strength. When the man made it clear that his desire was to fight, Feng had no reason to refuse.",
+        "He accepted his opponent's challenge in silence, and prepared to battle."
+      ]
+    },
+    {
+      "name": "Geese Howard",
+      "country": "USA",
+      "age": 43,
+      "gender": ["male"],
+      "quote": "BRING IT ON! I'LL DESTROY YOU ALL!",
+      "info": ["Geese Howard, the charismatic face of evil from SNK, has joined the fray! Experience for yourself the overwhelming presence of the newest antagonist to emerge in TEKKEN 7!"]
+    },
+    {
+      "name": "Gigas",
+      "country": false,
+      "age": false,
+      "gender": ["male", "non-human"],
+      "quote": "DATA DELETED",
+      "info": [
+        "One of G Corporation's weapons divisions entered their latest biological weapon, Gigas, into the King of Iron Fist Tournament for two reasons: first, to pit the strength of their next-gen humanoid weapon against a similar weapon of G Corp's; and second, to provoke Heihachi Mishima.",
+        "Ironically, the first battle was staged on the rooftop of G Corp's own Millennium Tower, possibly in retaliation for their affront to Heihachi. Unmoved by the striking beauty of the skyscraper, Gigas awaited his victim."
+      ]
+    },
+    {
+      "name": "Heihachi Mishima",
+      "country": "Japan",
+      "age": 75,
+      "gender": ["male"],
+      "quote": "YOU FOOL! I AM INVINCIBLE!",
+      "info": [
+        "The original leader of the Mishima Zaibatsu, and the fighter known as the \"King of the Iron Fist.\"",
+        "Heihachi continues to fight for control of the Mishima Zaibatsu against his son, Kazuya, and his grandson, Jin.",
+        "After having recovered from the injuries he sustained in the suicide attack on him from the G Corporation's Jack units, Heihachi is back with an iron fist--and body to match."
+      ]
+    },
+    {
+      "name": "Hwoarang",
+      "country": "South Korea",
+      "age": 21,
+      "gender": ["male"],
+      "quote": "COME AT ME! I'LL TAKE YOU DOWN",
+      "info": [
+        "Hwoarang sees one man as his rival: Jin Kazama. Jin, CEO of the Mishima Zaibatsu, declared war against the world, and in the ensuing turmoil vanished suddenly, without a trace. Suspecting there is more to Jin's disappearance than meets the eye, Hwoarang vowed to track him down.",
+        "With only a shred of reliable information at hand, he headed to the Middle East. After a series of dead leads, Hwoarang heard word that a demon had appeared in a town. Without a second thought, he got on his motorcycle and hammered down there.",
+        "When he arrived, the place had been deserted, save for Jin Kazama in his devil form."
+      ]
+    },
+    {
+      "name": "Jin Kazama",
+      "country": "Japan",
+      "age": 21,
+      "gender": ["male"],
+      "quote": "POWER IS EVERYTHING",
+      "info": [
+        "The leader of the Mishima Zaibatsu and the man who declared war on the world. Fighting the Devil inside him which gets stronger everyday, he yearns to be rid of it once and for all. When his battle is over at last, will he find hope… or despair?"
+      ]
+    },
+    {
+      "name": "Josie Rizal",
+      "country": "Philippines",
+      "age": false,
+      "gender": ["female"],
+      "quote": "I GOT THIS!",
+      "info": [
+        "Josie Rizal tried her best to support her family by balancing two jobs. One as a model, and one as a professional kickboxer. One day, while she was out running on her usual training course along the mountain roads, she was suddenly confronted by an enormous, hairy creature!",
+        "Josie screamed, and then fled half in tears, but the creature remained hot on her heels. Realizing she had little chance of escape, Josie abruptly came to a halt, then turned trembling, to face her feral foe..."
+      ]
+    },
+    {
+      "name": "Julia Chang",
+      "country": "USA",
+      "age": false,
+      "gender": ["female"],
+      "quote": "DON'T FORGET TO SUBSCRIBE!",
+      "info": ["Julia Chang, top spokeswoman for her great reforestation program, has joined the fray! Dazzle and overwhelm your opponents with her powerful fighting style based on Xin Yi Liu He Quan and Baji Quan!"]
+    },
+    {
+      "name": "Kazumi Mishima",
+      "country": "Japan",
+      "age": false,
+      "gender": ["female"],
+      "quote": "I WILL TEACH YOU THE MEANING OF FEAR.",
+      "info": [
+        "Kazumi Mishima, wife of Heihachi Mishima, is well versed in Hachijyo Karate. She was childhood friends with her husband Heihachi and eventually they fell in love. Through their love they birthed a healthy young boy. Fast forward a few years later, Heihachi would become the head of a huge organization called the Mishima Zaibatsu, with plans to conquer the world.",
+        "Kazumi loved Heihachi unconditionally, but at the same time he was beginning to feel dangerous. In this state, Heihachi threw the world into a war and Kazumi took it upon herself to stop him."
+      ]
+    },
+    {
+      "name": "Kazuya Mishima",
+      "country": "Japan",
+      "age": 49,
+      "gender": ["male"],
+      "quote": "IT'S TIME FOR YOU TO MEET YOUR END!",
+      "info": ["Kazuya was raised as the heir to the Mishima Zaibatsu, but rebelled against his father Heihachi. After awakening the power of the devil within him, he's finally able to control it."]
+    },
+    {
+      "name": "Kunimitsu",
+      "country": "Japan",
+      "age": false,
+      "gender": ["female"],
+      "quote": "ON MY MOTHER'S NAME...",
+      "info": [
+        "An interest shared with her mother, Kunimitsu was especially interested in industrial technology, so she accepted and decided to go to Mishima Polytechnical School undercover as a student to investigate Mishima Zaibatsu.",
+        "It was rumored that the school was somehow connected to the Tekken Force, the special operations unit of Mishima Zaibatsu.",
+        "One day, Kunimitsu got a call that her mother’s condition had worsened.",
+        "She rushed to see her bedridden mother and heard the story of the only thing that her mother could not obtain in the past. Kunimitsu was then determined to obtain the sword called “Yoshimitsu” from Yoshimitsu to cheer her mother up."
+      ]
+    },
+    {
+      "name": "Lars Alexandersson",
+      "country": "Sweden",
+      "age": 28,
+      "gender": ["male"],
+      "quote": "THINK YOU CAN STOP ME?",
+      "info": [
+        "A former officer of the Mishima Zaibatsu's special military unit, the Tekken Force, Lars enacted a coup d'état and rebelled against his former employer.",
+        "Lars continues to fight despite the loss of his fallen comrades, and his bloody rebellion is nowhere near finished."
+      ]
+    },
+    {
+      "name": "Leroy smith",
+      "country": "USA",
+      "age": 50,
+      "gender": ["male"],
+      "quote": "C'MON, SUGAR!",
+      "info": [
+        "Nearly a half century ago, a young boy named Leroy Smith lost his entire family to the violence in New York.",
+
+        "Many years passed...",
+
+        "Amidst Leroy's quest, a gang lord familiar with the old days informed Leroy that it was the Mishima Zaibatsu that was behind the war that tore the city apart a half a century ago.",
+
+        "Surprised that the mega conglomerate currently waging a war to split the world in two was also responsible for the atrocities committed so long ago, Leroy nonetheless resolved to eradicate the corporation if it truly was behind all of the evils he had seen.",
+
+        "To carry out his quest, he decided to enter The King of Iron Fist Tournament, which was organized by the Mishima Zaibatsu itself."
+      ]
+    },
+    {
+      "name": "Lidia Sobieska",
+      "country": "Poland",
+      "age": 29,
+      "gender": ["female"],
+      "quote": "THIS WILL BE OVER BEFORE LUNCH.",
+      "info": [
+        "Lidia has always been an upright and resolute woman.",
+        "She believes that justice require absolute power, which is why she has shown great interest in karate and politics from a very young age. She made a great debut in both areas, grabbing the first place in national karate tournaments from 7 years old until her 18th,and more recently being one of the youngest rising stars in the Polish political arena.",
+        "The war started by the Mishima Zaibatsu is greatly affecting Poland and she is committed to settle the situation with her own fists."
+      ]
+    },
+    {
+      "name": "Ling Xiaoyu",
+      "country": "China",
+      "age": 18,
+      "gender": ["female"],
+      "quote": "I'M GOING TO STOP JIN!",
+      "info": [
+        "Ling Xiaoyu infiltrated the Mishima Zaibatsu building in search of information relating to Jin Kazama's disappearance. Creeping deeper into the enemy territory under the guards' noses, she eventually hears Heihachi Mishima's voice coming from a room; he was giving orders about locating Jin. Just as Xiaoyu was about to sneak into the room, a man dressed all in white emerged and pushed her back. \"Take me to Jin!\" Xiaoyu demanded, unflinching. The man stood there for a moment, before ordering Xiaoyu to follow him.",
+        "He led her to the roof, then silently turned toward her, and readied himself to fight. Xiaoyu took up her fighting stance, and said, \"So that's how it is... If you think I'm just some little girl, you're sadly mistaken.\""
+      ]
+    },
+    {
+      "name": "Nina Williams",
+      "country": "Ireland",
+      "age": 43,
+      "gender": ["female"],
+      "quote": "YOU'VE GOT A DATE WITH DEATH",
+      "info": [
+        "After failing to apprehend Jin Kazama, Nina Williams decided it was time for her and the Mishima Zaibatsu to go their separate ways. On her first private assassination job, she was tasked with infiltrating a mafia wedding... posing as the bride!",
+        "During the ceremony, a firefight broke out where Nina took out all her targets. However, the commotion had attracted the Tekken Force, who had been dispatched to suppress the violence, and they gave chase. With the Tekken Force in hot pursuit, Nina made her escape.",
+        "That's when she bumped into a man she found vaguely familiar. The man wouldn't leave her alone. He seemed to have something he wanted to say to her... Nina decided that a confrontation was her best chance of escape."
+      ]
+    },
+    {
+      "name": "Noctis Lucis",
+      "country": false,
+      "age": 30,
+      "gender": ["male"],
+      "quote": false,
+      "info": ["Noctis, the 114th heir apparent to the Lucian throne, joins the fray from FINAL FANTASY XV! Experience a new level of combat as you warp around the enemy while invoking Armiger, the power of kings!"]
+    },
+    {
+      "name": "Shaheen",
+      "country": "Saudi Arabia",
+      "age": false,
+      "gender": ["male"],
+      "quote": "I DO NOT WISH TO HURT YOU, BUT I WILL FIGHT IF I MUST.",
+      "info": [
+        "Shaheen works for a private military firm specializing in the provision of security services. During his time in the army, he earned a reputation as an expert in one-on-one combat.",
+        "One day, his friend and owner of a company involved in the oil industry died suddenly under mysterious circumstances. In the postmortem the death was listed as accidental, but Shaheen suspected foul play when his friend's company was suddenly bought by G Corporation and the management, all family members, resigned. He began to investigate the matter, and a relative of a close friend confided in him that a demonic man was pulling the strings at G Corp: Kazuya Mishima. Shaheen struggled to believe a real demon could exist, but his investigations revealed that Kazuya could be worse than any of hell's creations.",
+        "Shaheen was torn: Should he take revenge for his friend's death by destroying that demon, or not? Wracked with doubt, he embarked on a solo mission to infiltrate G Corp."
+      ]
+    },
+    {
+      "name": "Steve fox",
+      "country": "UK",
+      "age": 21,
+      "gender": ["male"],
+      "quote": "HEY YOU… YOU WANNA TRY ME?",
+      "info": [
+        "Steve Fox has had plenty of run-ins with the Mishima Zaibatsu, but he never gave up his search for information about his past. Though his mother's identity remained a mystery, one name in particular began to crop up time and again: Nina Williams.",
+        "Believing she knew something, Steve began investigating her whereabouts until he came up with a promising lead. The information led him to an imposing cathedral. As he considered how best to proceed, a figure appeared from inside, dressed in a tattered wedding gown.",
+        "It was Nina, who seemed to be running away from something. Steve told her to stop, but she ignored him and fled. Determined not to let this opportunity escape him, he blocked her path."
+      ]
+    },
+    {
+      "name": "Zafina",
+      "country": "Egypt",
+      "age": 23,
+      "gender": ["female"],
+      "quote": false,
+      "info": [
+        "Zafina was born into a family of exorcists and raised as a fighter from a young age. She is out to take the lives of Jin Kazama and Kazuya Mishima, who are said to be harbingers of doom that will bring about the end of the world."
+      ]
+    }
+  ]
+}

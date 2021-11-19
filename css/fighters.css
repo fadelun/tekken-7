@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav.navbar {
+  background-image: linear-gradient(#161616, rgba(3, 0, 136, 0));
+}
+
+nav.navbar .nav-link {
+  font-weight: 500;
+}
+
+nav.navbar .nav-link.active {
+  color: #f6a623 !important;
+  text-shadow: 0 0 10px #f6a623, 0 0 20px #f6a623;
+}
+
+nav.navbar .btn-primary {
+  background-color: #030088;
+  border-radius: 0;
+  border: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+nav.navbar .btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+nav.navbar .btn-primary.hvr-outline-out {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+nav.navbar .btn-primary.hvr-outline-out::before {
+  content: "";
+  position: absolute;
+  border: #030088 solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+  transition-property: top, right, bottom, left;
+}
+
+nav.navbar .btn-primary.hvr-outline-out:hover:before, nav.navbar .btn-primary.hvr-outline-out:focus:before, nav.navbar .btn-primary.hvr-outline-out:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  border-color: #0b5ed7;
+}
+
+footer {
+  background-color: #0c0b0b;
+  padding: 5rem 0;
+}
+
+footer::before {
+  content: " ";
+  position: absolute;
+  top: -80px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to top, #0c0b0b, #0c0b0b00);
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 3rem 0;
+  }
+}
+
+body {
+  background-image: url("../assets/bg-fighters-page.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+
+body main {
+  color: white;
+  padding-bottom: 5rem;
+}
+
+body main .form-check-input {
+  opacity: 0;
+}
+
+body main .form-check-input:checked ~ .form-check-label {
+  opacity: 1;
+  text-shadow: 0 0 6px white;
+}
+
+body .form-check-label {
+  opacity: 0.7;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+body .form-check-label:hover {
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  body .row.row-cols-lg-7 > * {
+    width: 14% !important;
+  }
+}
+
+body a {
+  color: white;
+}
+
+body a:hover {
+  color: white;
+}
+
+body a .figure {
+  width: 100%;
+  filter: contrast(65%);
+  margin: 0;
+  background-color: #808080;
+  box-shadow: 4px 4px 10px black;
+}
+
+body a .figure.muted {
+  opacity: 0.6;
+  filter: contrast(40%);
+}
+
+body a .figure.muted:hover {
+  filter: contrast(40%);
+  cursor: default;
+  background-color: #808080;
+}
+
+body a .figure:hover {
+  filter: contrast(100%);
+  cursor: pointer;
+  background-color: #030088;
+}
+
+body a .figure .figure-caption {
+  font-size: 0.8em;
+  color: white;
+}
+/*# sourceMappingURL=fighters.css.map */

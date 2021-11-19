@@ -1,0 +1,188 @@
+@import "variable";
+@import "mixin";
+@import "navbar";
+// @import "responsive";
+@import "footer";
+
+body {
+  background: linear-gradient(to top, $primary 0%, rgba(12, 11, 11, 1) 30%, rgba(12, 11, 11, 1) 80%, transparentize($primary, 0.2) 100%), url("../assets/bg-personal-page.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  nav {
+    z-index: 10000;
+  }
+  main {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 37%;
+      background: url("../assets/persons/linear-bg.png");
+    }
+  }
+  #tooltip {
+    background: #333;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 4px;
+  }
+
+  // back to fighters button
+  .back-to-fighters {
+    width: 100px;
+    height: 70px;
+    background-color: #1111119a;
+    right: 7%;
+    display: grid;
+    padding: 16px 20px;
+    grid-template-columns: auto auto auto;
+    gap: 0;
+    transition: gap 0.2s, padding ease-in-out 0.1s;
+    z-index: 10000;
+    box-shadow: 8px 6px 10px #000000b2;
+    &::after,
+    &::before {
+      content: attr(data-tooltip);
+      width: max-content;
+      background-color: #1b1b1b;
+      position: absolute;
+      bottom: -2.2rem;
+      left: 50%;
+      transform: scale(0) translateX(-100%);
+    }
+
+    &:hover {
+      padding: 14px 16px;
+      gap: 4px;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        font-size: 0.9rem;
+        text-align: center;
+        transform: scale(1) translateX(-50%);
+        border-radius: 5px;
+        padding: 0.4rem;
+        color: white;
+      }
+    }
+    .item {
+      width: 100%;
+      height: 100%;
+      background-color: $gray;
+    }
+  }
+
+  .full-body-fighter {
+    min-height: 80rem;
+
+    img {
+      transform: scaleX(-1); //membuat gambar terbalik
+      left: -70px;
+      bottom: -20px;
+      // top: -100px;
+      height: 110%;
+    }
+  }
+
+  .description {
+    text-align: right;
+    color: white;
+    margin-top: 30%;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 12px black;
+
+    .personal-name {
+      font-size: 5rem;
+      line-height: 0.8;
+      margin-bottom: 30px !important;
+    }
+    .personal-name,
+    h3 {
+      font-family: $font-display;
+      letter-spacing: -2px;
+      text-align: left;
+    }
+    P {
+      line-height: 2;
+    }
+  }
+
+  .fighters-list {
+    width: 100vw;
+    bottom: 3rem;
+    right: 8%;
+    z-index: 100;
+
+    .col {
+      max-width: 7rem;
+    }
+    .figure {
+      filter: contrast(65%);
+      margin: 0;
+      background-color: #808080;
+      &:hover {
+        filter: contrast(100%);
+        cursor: pointer;
+        background-color: $primary;
+      }
+      .figure-caption {
+        color: white;
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    main {
+      background-size: cover;
+      background-position-x: center;
+      background-repeat: no-repeat;
+      min-height: max-content;
+      padding-bottom: 3rem;
+      &::after {
+        content: none;
+      }
+    }
+
+    .back-to-fighters {
+      width: 70px;
+      height: 50px;
+      padding: 12px 14px;
+      gap: 0;
+
+      &:hover {
+        padding: 10px 12px;
+        gap: 3px;
+      }
+    }
+
+    .description {
+      margin-top: 20rem;
+      text-align: left;
+      h1.personal-name {
+        font-size: 12vw;
+      }
+    }
+
+    .fighters-list {
+      max-width: 100%;
+
+      bottom: -6rem;
+      left: 2%;
+      right: 2%;
+
+      .col {
+        max-width: 5rem;
+        font-size: 0.6em;
+      }
+    }
+  }
+}

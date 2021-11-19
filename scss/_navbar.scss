@@ -1,0 +1,15 @@
+nav.navbar {
+  background-image: linear-gradient(#161616, transparentize($primary, 1));
+
+  .nav-link {
+    font-weight: 500;
+
+    &.active {
+      color: $gold !important;
+      text-shadow: 0 0 10px $gold, 0 0 20px $gold;
+    }
+  }
+  .btn-primary {
+    @include btn-primary(2rem, 2rem);
+  }
+}

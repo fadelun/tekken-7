@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+// colors
+$primary: #030088;
+$secondary: #c4c4c4;
+$dark: #0c0b0b;
+$gray: #808080;
+$gold: #f6a623;
+
+// font
+$font-body: "Montserrat", sans-serif;
+$font-display: "Poppins", sans-serif;
+
+body {
+  font-size: 18px !important;
+  font-family: $font-body;
+}

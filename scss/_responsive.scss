@@ -1,0 +1,14 @@
+:root {
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
+  }
+  @media screen and(min-width: 576px) {
+    font-size: 14px;
+  }
+  @media screen and(min-width: 767px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 22px;
+  }
+}

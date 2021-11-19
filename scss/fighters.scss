@@ -1,0 +1,75 @@
+@import "variable";
+@import "mixin";
+@import "navbar";
+@import "footer";
+
+body {
+  background-image: url("../assets/bg-fighters-page.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+
+  main {
+    color: white;
+    padding-bottom: 5rem;
+    .form-check-input {
+      opacity: 0;
+
+      &:checked ~ .form-check-label {
+        opacity: 1;
+        text-shadow: 0 0 6px white;
+      }
+    }
+  }
+
+  .form-check-label {
+    opacity: 0.7;
+    cursor: pointer;
+    font-family: $font-display;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .row.row-cols-lg-7 > * {
+      width: 14% !important;
+    }
+  }
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+
+    .figure {
+      width: 100%;
+      filter: contrast(65%);
+      margin: 0;
+      background-color: #808080;
+      box-shadow: 4px 4px 10px black;
+
+      // there is images not category
+      &.muted {
+        opacity: 0.6;
+        filter: contrast(40%);
+
+        &:hover {
+          filter: contrast(40%);
+          cursor: default;
+          background-color: #808080;
+        }
+      }
+      &:hover {
+        filter: contrast(100%);
+        cursor: pointer;
+        background-color: $primary;
+      }
+      .figure-caption {
+        font-size: 0.8em;
+        color: white;
+      }
+    }
+  }
+}

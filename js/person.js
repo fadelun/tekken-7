@@ -97,7 +97,7 @@ const getDataPerson = (data) => {
 
       setInterval(() => {
         if (window.innerWidth < 767) {
-          main.style.backgroundImage = `url("../../assets/persons/${findedName}.png"`;
+          main.style.backgroundImage = `url("../../assets/persons/${findedName.toLowerCase()}.png"`;
         } else {
           main.style.backgroundImage = "";
         }

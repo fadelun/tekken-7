@@ -13,6 +13,10 @@ nav.navbar {
   background-image: linear-gradient(#161616, rgba(3, 0, 136, 0));
 }
 
+nav.navbar .navbar-brand img {
+  max-width: 10rem !important;
+}
+
 nav.navbar .nav-link {
   font-weight: 500;
 }
@@ -103,6 +107,16 @@ body main .form-check-input {
 body main .form-check-input:checked ~ .form-check-label {
   opacity: 1;
   text-shadow: 0 0 6px white;
+}
+
+body main .form-check-label {
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  body main .form-check-label {
+    font-size: 0.7rem;
+  }
 }
 
 body .form-check-label {

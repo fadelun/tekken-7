@@ -147,7 +147,7 @@ body section#fighters-section {
 body section#fighters-section h1 {
   font-family: "Poppins", sans-serif;
   font-size: 22vw;
-  letter-spacing: -10px !important;
+  letter-spacing: -2px !important;
   top: -20px;
   cursor: default;
   color: rgba(255, 255, 255, 0.04);
@@ -283,5 +283,15 @@ body section#fighters-section .container .row .btn-primary.hvr-outline-out:hover
   bottom: -8px;
   left: -8px;
   border-color: #0b5ed7;
+}
+
+@media screen and (max-width: 576px) {
+  body .col .card:hover {
+    opacity: 1 !important;
+    filter: grayscale(80);
+  }
+  body .col figure {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

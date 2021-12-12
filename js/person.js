@@ -136,7 +136,7 @@ const getfighters = (names) => {
         }
       }
     }
-    console.log(results);
+    // console.log(results);
   }
 
   function cekResults() {
@@ -150,7 +150,7 @@ const getfighters = (names) => {
         }
       }
     }
-    console.log(results);
+    // console.log(results);
   }
   getFightersList();
   cekResults();

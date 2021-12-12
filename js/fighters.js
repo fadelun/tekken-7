@@ -13,6 +13,9 @@ fetch("fighterDetails.json")
   // });
   .then((data) => {
     const fighters = data.fighters;
+    AOS.init({
+      once: true,
+    }); //call AOS animate
 
     getFighters(fighters);
     getData(fighters);

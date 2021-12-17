@@ -66,14 +66,14 @@ const getDataPerson = (data) => {
 
   document.title += " | " + data.name;
   fighterName.innerHTML = data.name;
-  fighterImage.src = `../../assets/persons/${data.name.split(" ")[0].toLowerCase()}.png`;
+  fighterImage.src = `./assets/persons/${data.name.split(" ")[0].toLowerCase()}.png`;
   fighterImage.alt = data.name.split(" ")[0];
   description.firstElementChild.children[1].innerHTML = `AGE : ${data.age ? data.age : " Unknown"}`;
   description.firstElementChild.children[2].innerHTML = `REGION : ${data.country ? data.country.toUpperCase() : " Unknown"}`;
 
   setInterval(() => {
     if (window.innerWidth < 767) {
-      main.style.backgroundImage = `url("../../assets/persons/${data.name.split(" ")[0].toLowerCase()}.png"`;
+      main.style.backgroundImage = `url("./assets/persons/${data.name.split(" ")[0].toLowerCase()}.png"`;
     } else {
       main.style.backgroundImage = "";
     }

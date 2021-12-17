@@ -26,7 +26,7 @@ const getFighters = (fighters) => {
                                       data-aos-duration="400" data-aos-offset="-100" data-aos-delay="${50 * i}">
                 <a href="./person.html?id=${i + 1}">
                 <figure class="figure position-relative">
-                    <img src="../assets/fighters/${e.toLowerCase()}.png" class="figure-img img-fluid m-0" alt="${e}" />
+                    <img src="./assets/fighters/${e.toLowerCase()}.png" class="figure-img img-fluid m-0" alt="${e}" />
                     <figcaption class="figure-caption  position-absolute bottom-0 start-0">${e}</figcaption>
                 </figure>
                 </a>

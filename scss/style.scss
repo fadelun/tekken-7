@@ -133,6 +133,9 @@ body {
   }
 
   @media screen and (max-width: 576px) {
+    main {
+      height: 90vh;
+    }
     .col {
       .card:hover {
         opacity: 1 !important;

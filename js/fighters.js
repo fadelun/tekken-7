@@ -46,12 +46,12 @@ const getData = (data) => {
         // kategori ALL
         if (e.innerText.toUpperCase() == "ALL") {
           figures[i].classList.remove("muted");
-          figures[i].parentNode.setAttribute("href", `./person.html`);
+          figures[i].parentNode.setAttribute("href", `person.html?id=${i + 1}`);
         }
         // kategori NON-HUMAN
         else if (e.innerText.toUpperCase() == "NON-HUMAN" && fighter.gender[1] == e.innerText.toLowerCase()) {
           figures[i].classList.remove("muted");
-          figures[i].parentNode.setAttribute("href", `./person.html`);
+          figures[i].parentNode.setAttribute("href", `person.html?id=${i + 1}`);
         }
         // kategori MALE atau FEMALE, tergantung user klik
         else if (fighter.gender != e.innerText.toLowerCase()) {
@@ -60,11 +60,11 @@ const getData = (data) => {
 
           if (fighter.gender[0] == e.innerText.toLowerCase()) {
             figures[i].classList.remove("muted");
-            figures[i].parentNode.setAttribute("href", `./person.html`);
+            figures[i].parentNode.setAttribute("href", `person.html?id=${i + 1}`);
           }
         } else {
           figures[i].classList.remove("muted");
-          figures[i].parentNode.setAttribute("href", `./person.html`);
+          figures[i].parentNode.setAttribute("href", `person.html?id=${i + 1}`);
         }
       });
     });

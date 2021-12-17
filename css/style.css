@@ -286,6 +286,9 @@ body section#fighters-section .container .row .btn-primary.hvr-outline-out:hover
 }
 
 @media screen and (max-width: 576px) {
+  body main {
+    height: 90vh;
+  }
   body .col .card:hover {
     opacity: 1 !important;
     filter: grayscale(80);

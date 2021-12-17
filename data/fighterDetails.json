@@ -1,6 +1,7 @@
 {
   "fighters": [
     {
+      "id": 1,
       "name": "Akuma",
       "country": false,
       "age": false,
@@ -11,6 +12,7 @@
       ]
     },
     {
+      "id": 2,
       "name": "Alisa Bosconovitch",
       "country": "Russia",
       "age": false,
@@ -21,6 +23,7 @@
       ]
     },
     {
+      "id": 3,
       "name": "Anna Williams",
       "country": "Ireland",
       "age": 41,
@@ -31,6 +34,7 @@
       ]
     },
     {
+      "id": 4,
       "name": "Armor King",
       "country": false,
       "age": false,
@@ -39,6 +43,7 @@
       "info": ["A mysterious wrestler who wears a suit of steel armor and a black jaguar mask. He was presumed to have been killed in a bar fight with Craig Marduk, yet he's returned to fight once again. No one knows his true identity."]
     },
     {
+      "id": 5,
       "name": "Asuka Kazama",
       "country": "Japan",
       "age": 17,
@@ -47,6 +52,7 @@
       "info": "Daughter of the Kazama Traditional Martial Arts School and known as \"Gang Mediator\" in her hometown. Ever since she involved herself in a certain street fight, Lili has viewed her as a rival. She knows that Jin Kazama is her cousin and vows to take him down."
     },
     {
+      "id": 6,
       "name": "Bob",
       "country": "USA",
       "age": 27,
@@ -57,6 +63,7 @@
       ]
     },
     {
+      "id": 7,
       "name": "Bryan Fury",
       "country": "USA",
       "age": 31,
@@ -67,6 +74,7 @@
       ]
     },
     {
+      "id": 8,
       "name": "Claudio Serafino",
       "country": "Italy",
       "age": false,
@@ -79,6 +87,7 @@
       ]
     },
     {
+      "id": 9,
       "name": "Devil Jin",
       "country": false,
       "age": false,
@@ -91,6 +100,7 @@
       ]
     },
     {
+      "id": 10,
       "name": "Dragunov",
       "country": "Russia",
       "age": 26,
@@ -102,6 +112,7 @@
       ]
     },
     {
+      "id": 11,
       "name": "Eddy Gordo",
       "country": "Brazil",
       "age": 29,
@@ -113,6 +124,7 @@
       ]
     },
     {
+      "id": 12,
       "name": "Eliza",
       "country": false,
       "age": 1000,
@@ -125,6 +137,7 @@
       ]
     },
     {
+      "id": 13,
       "name": "Fahkumram",
       "country": "Thailand",
       "age": 28,
@@ -139,6 +152,7 @@
       ]
     },
     {
+      "id": 14,
       "name": "Feng Wei",
       "country": "China",
       "age": 26,
@@ -150,6 +164,7 @@
       ]
     },
     {
+      "id": 15,
       "name": "Geese Howard",
       "country": "USA",
       "age": 43,
@@ -158,6 +173,7 @@
       "info": ["Geese Howard, the charismatic face of evil from SNK, has joined the fray! Experience for yourself the overwhelming presence of the newest antagonist to emerge in TEKKEN 7!"]
     },
     {
+      "id": 16,
       "name": "Gigas",
       "country": false,
       "age": false,
@@ -169,6 +185,7 @@
       ]
     },
     {
+      "id": 17,
       "name": "Heihachi Mishima",
       "country": "Japan",
       "age": 75,
@@ -181,6 +198,7 @@
       ]
     },
     {
+      "id": 18,
       "name": "Hwoarang",
       "country": "South Korea",
       "age": 21,
@@ -193,6 +211,7 @@
       ]
     },
     {
+      "id": 19,
       "name": "Jin Kazama",
       "country": "Japan",
       "age": 21,
@@ -203,6 +222,7 @@
       ]
     },
     {
+      "id": 20,
       "name": "Josie Rizal",
       "country": "Philippines",
       "age": false,
@@ -214,6 +234,7 @@
       ]
     },
     {
+      "id": 21,
       "name": "Julia Chang",
       "country": "USA",
       "age": false,
@@ -222,6 +243,7 @@
       "info": ["Julia Chang, top spokeswoman for her great reforestation program, has joined the fray! Dazzle and overwhelm your opponents with her powerful fighting style based on Xin Yi Liu He Quan and Baji Quan!"]
     },
     {
+      "id": 22,
       "name": "Kazumi Mishima",
       "country": "Japan",
       "age": false,
@@ -233,6 +255,7 @@
       ]
     },
     {
+      "id": 22,
       "name": "Kazuya Mishima",
       "country": "Japan",
       "age": 49,
@@ -241,6 +264,7 @@
       "info": ["Kazuya was raised as the heir to the Mishima Zaibatsu, but rebelled against his father Heihachi. After awakening the power of the devil within him, he's finally able to control it."]
     },
     {
+      "id": 23,
       "name": "Kunimitsu",
       "country": "Japan",
       "age": false,
@@ -254,6 +278,7 @@
       ]
     },
     {
+      "id": 24,
       "name": "Lars Alexandersson",
       "country": "Sweden",
       "age": 28,
@@ -265,6 +290,7 @@
       ]
     },
     {
+      "id": 25,
       "name": "Leroy smith",
       "country": "USA",
       "age": 50,
@@ -283,6 +309,7 @@
       ]
     },
     {
+      "id": 26,
       "name": "Lidia Sobieska",
       "country": "Poland",
       "age": 29,
@@ -295,6 +322,7 @@
       ]
     },
     {
+      "id": 27,
       "name": "Ling Xiaoyu",
       "country": "China",
       "age": 18,
@@ -306,6 +334,7 @@
       ]
     },
     {
+      "id": 28,
       "name": "Nina Williams",
       "country": "Ireland",
       "age": 43,
@@ -318,6 +347,7 @@
       ]
     },
     {
+      "id": 29,
       "name": "Noctis Lucis",
       "country": false,
       "age": 30,
@@ -326,6 +356,7 @@
       "info": ["Noctis, the 114th heir apparent to the Lucian throne, joins the fray from FINAL FANTASY XV! Experience a new level of combat as you warp around the enemy while invoking Armiger, the power of kings!"]
     },
     {
+      "id": 30,
       "name": "Shaheen",
       "country": "Saudi Arabia",
       "age": false,
@@ -338,6 +369,7 @@
       ]
     },
     {
+      "id": 31,
       "name": "Steve fox",
       "country": "UK",
       "age": 21,
@@ -350,6 +382,7 @@
       ]
     },
     {
+      "id": 32,
       "name": "Zafina",
       "country": "Egypt",
       "age": 23,

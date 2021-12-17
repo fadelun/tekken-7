@@ -1,20 +1,17 @@
-// buat teks main dulu
-// generate semua informasi fighters seperti nama,umur,dan deskripsi
-// generate fighters list max 4 fighters secara acak
 const main = document.querySelector("main");
 const body = document.body;
+const id = new URLSearchParams(window.location.search).get("id");
 
-const generateMain = () => {
-  fetch("../fighterDetails.json")
-    .then((results) => results.json())
-    .then((data) => {
-      const fighters = data.fighters;
+const generateMain = async () => {
+  let url = "http://localhost:3000/fighters";
 
-      getDataPerson(fighters);
-    })
-    .catch((err) => {
-      console.log("not found", err);
-    });
+  const res = await fetch(url + "/" + id);
+  const res_02 = await fetch(url);
+
+  const data = await res.json();
+  const allFighters = await res_02.json();
+
+  const fighters = data;
 
   main.innerHTML = `<div class="container" style="max-width: 80vw">
  <div class="row">
@@ -54,72 +51,55 @@ const generateMain = () => {
    </div>
  </div>
 </div>`;
+
+  getDataPerson(fighters);
+  getfighters(allFighters);
 };
-
-generateMain();
-
-const section = document.querySelector(".fighters-list");
-const description = document.querySelector(".description");
-const fighterImage = document.querySelector(".full-body-fighter img");
-const fighterName = description.querySelector(".personal-name");
-const fighterInfo = description.lastElementChild;
 
 // function data person
 const getDataPerson = (data) => {
-  let names = [];
+  const description = document.querySelector(".description");
+  const fighterImage = document.querySelector(".full-body-fighter img");
+  const fighterName = description.querySelector(".personal-name");
+  const fighterInfo = description.lastElementChild;
+  const infoPerson = data.info;
 
-  data.forEach((e) => {
-    const firstName = e.name.split(" ")[0];
-    names.push(firstName);
-  });
+  document.title += " | " + data.name;
+  fighterName.innerHTML = data.name;
+  fighterImage.src = `../../assets/persons/${data.name.split(" ")[0].toLowerCase()}.png`;
+  fighterImage.alt = data.name.split(" ")[0];
+  description.firstElementChild.children[1].innerHTML = `AGE : ${data.age ? data.age : " Unknown"}`;
+  description.firstElementChild.children[2].innerHTML = `REGION : ${data.country ? data.country.toUpperCase() : " Unknown"}`;
 
-  // get file name
-  const url = window.location.pathname;
-  const filename = url.substring(url.lastIndexOf("/") + 1, url.lastIndexOf(".")); // get name only without html format
-
-  // console.log(filename);
-  // console.log(url);
-
-  data.forEach((e, i) => {
-    if (e.name.split(" ")[0] == filename) {
-      console.log(filename);
-
-      const infoPerson = e.info;
-      const personName = e.name.split(" ");
-      const findedName = personName.find((name) => name == names[i]);
-
-      document.title += " | " + e.name;
-      fighterName.innerHTML = e.name;
-      fighterImage.src = `../../assets/persons/${findedName.toLowerCase()}.png`;
-      fighterImage.alt = findedName;
-      description.firstElementChild.children[1].innerHTML = `AGE : ${e.age ? e.age : " Unknown"}`;
-      description.firstElementChild.children[2].innerHTML = `REGION : ${e.country ? e.country.toUpperCase() : " Unknown"}`;
-
-      setInterval(() => {
-        if (window.innerWidth < 767) {
-          main.style.backgroundImage = `url("../../assets/persons/${findedName.toLowerCase()}.png"`;
-        } else {
-          main.style.backgroundImage = "";
-        }
-      }, 100);
-
-      if (typeof infoPerson == "object") {
-        infoPerson.map((info, i) => {
-          const para = document.createElement("p"); //build tag <p>
-          para.innerHTML = info; //write text in tag <p>
-          fighterInfo.appendChild(para); //put tag <p> on class info
-        });
-      } else {
-        fighterInfo.innerHTML = `<p>${infoPerson}</p>`;
-      }
+  setInterval(() => {
+    if (window.innerWidth < 767) {
+      main.style.backgroundImage = `url("../../assets/persons/${data.name.split(" ")[0].toLowerCase()}.png"`;
+    } else {
+      main.style.backgroundImage = "";
     }
-  });
+  }, 100);
 
-  getfighters(names);
+  if (typeof infoPerson == "object") {
+    infoPerson.map((info, i) => {
+      const para = document.createElement("p"); //build tag <p>
+      para.innerHTML = info; //write text in tag <p>
+      fighterInfo.appendChild(para); //put tag <p> on class info
+    });
+  } else {
+    fighterInfo.innerHTML = `<p>${infoPerson}</p>`;
+  }
 };
 
 // function get fighters from json
-const getfighters = (names) => {
+const getfighters = (data) => {
+  const section = document.querySelector(".fighters-list");
+
+  let names = [];
+
+  data.forEach((item) => {
+    names.push({ name: item.name, id: item.id });
+  });
+
   let results = [];
 
   function generateNumbers() {
@@ -150,31 +130,23 @@ const getfighters = (names) => {
         }
       }
     }
-    // console.log(results);
+    console.log(results);
   }
   getFightersList();
   cekResults();
 
   results.forEach((e) => {
     const generateCol = `<div class="col">
-                                        <a href="./${e}.html" style="color: white">
-                                        <figure class="figure position-relative">
-                                            <img src="../../assets/fighters/${e.toLowerCase()}.png" class="figure-img img-fluid m-0" alt="${e}" />
-                                            <figcaption class="figure-caption position-absolute bottom-0 start-0">${e}</figcaption>
-                                        </figure>
-                                        </a>
-                                    </div>`;
+        <a href="./person.html?id=${e.id}" style="color: white">
+        <figure class="figure position-relative">
+            <img src="./assets/fighters/${e.name.split(" ")[0].toLowerCase()}.png" class="figure-img img-fluid m-0" alt="${e.name}" />
+            <figcaption class="figure-caption position-absolute bottom-0 start-0">${e.name.split(" ")[0]}</figcaption>
+        </figure>
+        </a>
+    </div>`;
 
     section.firstElementChild.innerHTML += generateCol;
   });
 };
 
-// const fruits = ["apple", "banana"];
-
-// function getFruits() {
-//   console.log(fruits);
-// }
-
-// const test = getFruits;
-
-// console.log(test());
+window.addEventListener("DOMContentLoaded", () => generateMain());

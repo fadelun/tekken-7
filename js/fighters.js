@@ -1,25 +1,18 @@
 const showcase = document.getElementById("fighters-showcase");
 const allCategory = document.querySelectorAll(".list-category .form-check");
 
-fetch("fighterDetails.json")
-  .then((results) => results.json())
-  // .then((data) => {
-  //   const male = data.fighters.filter((e) => e.gender == "male");
-  //   console.log(male);
-  // })
-  // .then((data) => {
-  //   const female = data.fighters.filter((e) => e.gender == "female");
-  //   console.log(female);
-  // });
-  .then((data) => {
-    const fighters = data.fighters;
-    AOS.init({
-      once: true,
-    }); //call AOS animate
+const renderFighters = async () => {
+  let url = "http://localhost:3000/fighters";
 
-    getFighters(fighters);
-    getData(fighters);
-  });
+  const res = await fetch(url);
+  const data = await res.json();
+  // console.log(data);
+
+  const fighters = data;
+
+  getFighters(fighters);
+  getData(fighters);
+};
 
 const getFighters = (fighters) => {
   let array = [];
@@ -31,7 +24,7 @@ const getFighters = (fighters) => {
   array.forEach((e, i) => {
     showcase.innerHTML += `<div class="col" data-aos="fade-up" data-aos-easing="ease-in-sine"
                                       data-aos-duration="400" data-aos-offset="-100" data-aos-delay="${50 * i}">
-                <a href="./fighters/${e}.html">
+                <a href="./person.html?id=${i + 1}">
                 <figure class="figure position-relative">
                     <img src="../assets/fighters/${e.toLowerCase()}.png" class="figure-img img-fluid m-0" alt="${e}" />
                     <figcaption class="figure-caption  position-absolute bottom-0 start-0">${e}</figcaption>
@@ -53,12 +46,12 @@ const getData = (data) => {
         // kategori ALL
         if (e.innerText.toUpperCase() == "ALL") {
           figures[i].classList.remove("muted");
-          figures[i].parentNode.setAttribute("href", `./fighters/${firstName}.html`);
+          figures[i].parentNode.setAttribute("href", `./person.html`);
         }
         // kategori NON-HUMAN
         else if (e.innerText.toUpperCase() == "NON-HUMAN" && fighter.gender[1] == e.innerText.toLowerCase()) {
           figures[i].classList.remove("muted");
-          figures[i].parentNode.setAttribute("href", `./fighters/${firstName}.html`);
+          figures[i].parentNode.setAttribute("href", `./person.html`);
         }
         // kategori MALE atau FEMALE, tergantung user klik
         else if (fighter.gender != e.innerText.toLowerCase()) {
@@ -67,13 +60,15 @@ const getData = (data) => {
 
           if (fighter.gender[0] == e.innerText.toLowerCase()) {
             figures[i].classList.remove("muted");
-            figures[i].parentNode.setAttribute("href", `./fighters/${firstName}.html`);
+            figures[i].parentNode.setAttribute("href", `./person.html`);
           }
         } else {
           figures[i].classList.remove("muted");
-          figures[i].parentNode.setAttribute("href", `./fighters/${firstName}.html`);
+          figures[i].parentNode.setAttribute("href", `./person.html`);
         }
       });
     });
   });
 };
+
+window.addEventListener("DOMContentLoaded", () => renderFighters());

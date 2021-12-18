@@ -255,7 +255,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 23,
       "name": "Kazuya Mishima",
       "country": "Japan",
       "age": 49,
@@ -264,7 +264,7 @@
       "info": ["Kazuya was raised as the heir to the Mishima Zaibatsu, but rebelled against his father Heihachi. After awakening the power of the devil within him, he's finally able to control it."]
     },
     {
-      "id": 23,
+      "id": 24,
       "name": "Kunimitsu",
       "country": "Japan",
       "age": false,
@@ -278,7 +278,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 25,
       "name": "Lars Alexandersson",
       "country": "Sweden",
       "age": 28,
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 26,
       "name": "Leroy smith",
       "country": "USA",
       "age": 50,
@@ -309,7 +309,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 27,
       "name": "Lidia Sobieska",
       "country": "Poland",
       "age": 29,
@@ -322,7 +322,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": 28,
       "name": "Ling Xiaoyu",
       "country": "China",
       "age": 18,
@@ -334,7 +334,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": 29,
       "name": "Nina Williams",
       "country": "Ireland",
       "age": 43,
@@ -347,7 +347,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": 30,
       "name": "Noctis Lucis",
       "country": false,
       "age": 30,
@@ -356,7 +356,7 @@
       "info": ["Noctis, the 114th heir apparent to the Lucian throne, joins the fray from FINAL FANTASY XV! Experience a new level of combat as you warp around the enemy while invoking Armiger, the power of kings!"]
     },
     {
-      "id": 30,
+      "id": 31,
       "name": "Shaheen",
       "country": "Saudi Arabia",
       "age": false,
@@ -369,7 +369,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 32,
       "name": "Steve fox",
       "country": "UK",
       "age": 21,
@@ -382,7 +382,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": 33,
       "name": "Zafina",
       "country": "Egypt",
       "age": 23,

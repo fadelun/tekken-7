@@ -3,14 +3,6 @@ const allCategory = document.querySelectorAll(".list-category .form-check");
 
 fetch("fighterDetails.json")
   .then((results) => results.json())
-  // .then((data) => {
-  //   const male = data.fighters.filter((e) => e.gender == "male");
-  //   console.log(male);
-  // })
-  // .then((data) => {
-  //   const female = data.fighters.filter((e) => e.gender == "female");
-  //   console.log(female);
-  // });
   .then((data) => {
     const fighters = data.fighters;
     AOS.init({
